@@ -7,6 +7,6 @@ with open("conv-txt-list.py", "rb") as fp:
         for line in fp:
                 #print len(line)
                 if len(line) <> 1:
-                        if (line not in lines):
+#                       if (line not in lines):
                                 lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
         print lines
