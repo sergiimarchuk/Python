@@ -1,3 +1,4 @@
+<pre>
 # cat pypass.py
 #!/usr/bin/python
 def passwdf():
@@ -72,3 +73,4 @@ with open("/etc/group", "rb") as gro:
         for ij in oo:
                 print ij.split(":")[0]
                 print (ok.append(ij.split(":")[0]))
+</pre>
