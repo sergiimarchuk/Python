@@ -1,3 +1,4 @@
+# cat pypass.py
 #!/usr/bin/python
 def passwdf():
         with open("/etc/passwd", "rb") as fp:
@@ -29,13 +30,45 @@ def gpasswdf():
 
 def groupf():
         with open("/etc/group", "rb") as sgf:
-                for linf in sgf:
-                        ksgf = linf
-                        if "nidlar" in ksgf:
-                                #print ksg.split(":")#print ksg.split(":")[0]#print ksg.split(":")[1]#print ksg.split(":")[2]#print ksg.split(":")[3]
-                                return(ksgf)
+                lines = []
+                for line in sgf:
+                        #print len(line)
+                        if "nidlar" in sgf:
+                                lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
+                                oo=lines
+                                #print lines
+                                return(type(oo))
 
-res =  passwdf() + shadowf() +  gpasswdf()
+def allfroupf():
+        with open("/etc/group", "rb") as gro:
+                lines = []
+                for line in gro:
+                #print len(line)
+                        if "nidlar" in line:
+                                if (line not in lines):
+                                        lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
+                                        oo=lines
+                for ij in oo:
+                        #print ij.split(":")[0]
+                        return(ij.split(":")[0])
+
+
+
+res =  passwdf() + shadowf() +  gpasswdf()# + allfroupf()
 print res
 
-print groupf()
+#print groupf()
+
+
+with open("/etc/group", "rb") as gro:
+        lines = []
+        for line in gro:
+        #print len(line)
+                if "nidlar" in line:
+                        if (line not in lines):
+                                lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
+                                oo=lines
+        ok = []
+        for ij in oo:
+                print ij.split(":")[0]
+                print (ok.append(ij.split(":")[0]))
