@@ -1,5 +1,3 @@
-<pre>
-# cat pypass.py
 #!/usr/bin/python
 def passwdf():
         with open("/etc/passwd", "rb") as fp:
@@ -28,19 +26,7 @@ def gpasswdf():
                                 gpasswd = ksgp.split(":")[3]
                                 gr=" group='"+gpasswd + "'"
                                 return(gr)
-
-def groupf():
-        with open("/etc/group", "rb") as sgf:
-                lines = []
-                for line in sgf:
-                        #print len(line)
-                        if "nidlar" in sgf:
-                                lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
-                                oo=lines
-                                #print lines
-                                return(type(oo))
-
-def allfroupf():
+def groupsadd():
         with open("/etc/group", "rb") as gro:
                 lines = []
                 for line in gro:
@@ -49,28 +35,14 @@ def allfroupf():
                                 if (line not in lines):
                                         lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
                                         oo=lines
+                ok = []
                 for ij in oo:
                         #print ij.split(":")[0]
-                        return(ij.split(":")[0])
+                        #print (ok.append(ij.split(":")[0]))
+                        ok.append(ij.split(":")[0])
+                ko = " groups='" + ','.join(ok) + "'"
+                return(ko)
 
-
-
-res =  passwdf() + shadowf() +  gpasswdf()# + allfroupf()
+res =  passwdf() + shadowf() +  gpasswdf() + groupsadd() # + allfroupf()
 print res
 
-#print groupf()
-
-
-with open("/etc/group", "rb") as gro:
-        lines = []
-        for line in gro:
-        #print len(line)
-                if "nidlar" in line:
-                        if (line not in lines):
-                                lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
-                                oo=lines
-        ok = []
-        for ij in oo:
-                print ij.split(":")[0]
-                print (ok.append(ij.split(":")[0]))
-</pre>
