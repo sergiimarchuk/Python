@@ -46,3 +46,25 @@ def groupsadd():
 res =  passwdf() + shadowf() +  gpasswdf() + groupsadd() # + allfroupf()
 print res
 
+
+
+
+"""
+
+with open("/etc/group", "rb") as gro:
+        lines = []
+        for line in gro:
+        #print len(line)
+                if "nidlar" in line:
+                        if (line not in lines):
+                                lines.append(line[:-1]) if line[-1] == "\n" else lines.append(line)
+                                oo=lines
+        ok = []
+        for ij in oo:
+                print ij.split(":")[0]
+                #print (ok.append(ij.split(":")[0]))
+                ok.append(ij.split(":")[0])
+        print ','.join(ok)
+
+"""
+
