@@ -1,3 +1,4 @@
+<pre>
 def maximum(x, y):
     if x > y:
         print(x)
@@ -7,7 +8,9 @@ def maximum(x, y):
         print(y)
 
 maximum(2, 3)
+</pre>
 
+<pre>
 def maximum(x, y):
     if x > y:
         return x
@@ -17,6 +20,8 @@ def maximum(x, y):
         return y
 
 print(maximum(2, 3))
+</pre>
+
 
 <pre>
 Orig: http://stackoverflow.com/questions/3881434/difference-between-returns-and-printing-in-python
