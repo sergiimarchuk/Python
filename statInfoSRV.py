@@ -5,19 +5,20 @@ def crossList(cList):
                 for i in cList:
                         print i
 
-def runCMD(commandSSH,Comments):
+def runCMD(commandSSH,SectionComments,CommandComments):
         cmd = commandSSH
         p = Popen(cmd , shell=True, stdout=PIPE, stderr=PIPE)
         Nout, err = p.communicate()
         Nou=((Nout.rstrip().splitlines()))
-
         print
-        print " -- -- -- -- -- -- -- -- -- -- -- -- " + Comments
-        crossList(Nou)
-        print
+        print SectionComments
+        def cross(cList):
+                for inn in cList:
+                                print "       "+CommandComments+inn
+        cross(Nou)
 
-
-runCMD("hostname -I","IP address which exist on server")
-runCMD("uname -a","Systen info")
-runCMD("dmesg | grep DMI","DMI")
-runCMD("df -T /boot | awk '{ print $7, $2, $1 } '","type fs")
+runCMD("hostname -I","Network:  ","IP address which exist on server: ")
+runCMD("uname -a","System:  ","Systen info: ")
+runCMD("dmesg | grep DMI ","DMI:  ","DMI: ")
+runCMD("df -T /boot | awk '{ print $7, $2, $1 } '","Partiotion:  ","Type fs /boot: ")
+runCMD("uptime","uptime:  ","uptime: ")
