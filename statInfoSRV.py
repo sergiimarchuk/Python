@@ -31,17 +31,36 @@ def statusBootFS(commandSSH,SectionComments,CommandComments):
         Nout, err = p.communicate()
         Nou=((Nout.rstrip().splitlines()))
         print
-        print SectionComments
+        print "\033[1;34m" +SectionComments+ "\033[1;m"
         def cross(cList):
                 for inn in cList:
-                                print "       "+CommandComments+inn,
+                                print "       " +CommandComments+inn,
         #cross(Nou)
         extfs = (Nou[1].split())[1]
         if extfs == "ext4" or extfs == "ext4":
-                mess = '\033[1;32mGreen like Grass\033[1;m'
-                print '\033[1;32m%CommandComments%\033[1;m'+extfs+'\033[1;32m Looks good\033[1;m'
+                print "\033[1;33m" + CommandComments+ "\033[1;m"+"\033[1;48m" + extfs + "\033[1;m"+"\033[1;32m Looks good\033[1;m"
         else:
                 print CommandComments+"Please take a look on /boot and fs type"
 
 
 statusBootFS("df -T /boot | awk '{ print $7, $2, $1 } '","Type FS :  ","Type fs /boot: ")
+
+
+def getIDusers(commandSSH,SectionComments,CommandComments):
+        userlist = ['aouser','aoapp']
+        for ul in userlist:
+                cmd = commandSSH+" "+ul
+                p = Popen(cmd , shell=True, stdout=PIPE, stderr=PIPE)
+                Nout, err = p.communicate()
+                Nou=((Nout.rstrip().splitlines()))
+                print
+                print "\033[1;34m" +SectionComments+ ul +"\033[1;m"
+
+                def cross(cList):
+                        for inn in cList:
+                                        print "       " +CommandComments+inn,
+
+                cross(Nou)
+
+getIDusers("id","User ID Info :  ","id: ")
+
