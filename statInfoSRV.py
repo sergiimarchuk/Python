@@ -64,3 +64,26 @@ def getIDusers(commandSSH,SectionComments,CommandComments):
 
 getIDusers("id","User ID Info :  ","id: ")
 
+def getPERfolder(commandSSH,commandARG1,SectionComments,CommandComments):
+        userlist = ['aouser','aoapp','nnnn']
+        for ul in userlist:
+                cmd = commandSSH+" "+ul+" "+commandARG1
+                p = Popen(cmd , shell=True, stdout=PIPE, stderr=PIPE)
+                Nout, err = p.communicate()
+                Nou=((Nout.rstrip().splitlines()))
+                print
+                #print "\033[1;34m" +SectionComments+ ul +" "+ err+"\033[1;m"
+
+                def cross(cList):
+                        for inn in cList:
+                                        #print "       " +CommandComments+inn,
+                                        print "Permissions Home directory: " +ul+" ",(inn).split(':')[5],
+                                        cmd = "ls -ld"+" "+(inn).split(':')[5]
+                                        p = Popen(cmd , shell=True, stdout=PIPE, stderr=PIPE)
+                                        out, err = p.communicate()
+                                        print out
+                                        #print cmd
+
+                cross(Nou)
+getPERfolder("grep","/etc/passwd","User ID Info :  ","id: ")
+
