@@ -39,7 +39,7 @@ def compSet(listA1,listB1):
         #print '\033[1;31m\"Attantion! Please take a look and compare "cat /etc/fstab" and "mount" "\033[1;m' #,list(Y)
         #print
         if slistA1 <> slistB1:
-                print '\033[1;31m\"Attantion! Please take a look and compare "cat /etc/fstab" and "mount" "\033[1;m'
+                print '\033[1;31m\"Please take a look and compare "cat /etc/fstab" and "mount" "\033[1;m'
                 UA = slistA1.difference(slistB1);
                 UB = slistB1.difference(slistA1);
                 def crossList(cList):
