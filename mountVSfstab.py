@@ -53,7 +53,7 @@ def compSet(listA1,listB1):
                 crossList(UA);
                 crossList(UB);
         else:
-                print "\033[1;31m" + "mount VS fstab is Equal." + "\033[1;m"
+                print "\033[1;32m" + "mount VS fstab is Equal." + "\033[1;m"
                 #UA = slistA1.difference(slistB1);
                 #UB = slistB1.difference(slistA1);
 
