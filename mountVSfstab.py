@@ -30,11 +30,6 @@ def catFstab():
 slistA1 = set(mountRun()); #print slistA1; print "vs"
 slistB1 = set(catFstab()); #print slistB1
 
-def crossList(cList):
-                for el in cList:
-                        print el
-
-
 def compSet(listA1,listB1):
         slistA1 = set(listA1);
         slistB1 = set(listB1);
