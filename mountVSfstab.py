@@ -31,13 +31,7 @@ slistA1 = set(mountRun()); #print slistA1; print "vs"
 slistB1 = set(catFstab()); #print slistB1
 
 def compSet(listA1,listB1):
-        slistA1 = set(listA1);
-        slistB1 = set(listB1);
-
-        Y = slistA1.symmetric_difference(slistB1)
-
-        #print '\033[1;31m\"Attantion! Please take a look and compare "cat /etc/fstab" and "mount" "\033[1;m' #,list(Y)
-        #print
+        #Y = slistA1.symmetric_difference(slistB1)
         if slistA1 <> slistB1:
                 print '\033[1;31m\"Please take a look and compare "cat /etc/fstab" and "mount" "\033[1;m'
                 UA = slistA1.difference(slistB1);
