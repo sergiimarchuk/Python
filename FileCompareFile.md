@@ -1,5 +1,4 @@
 <pre>
-cat getInfSysDB.py
 #!/usr/bin/python
 import csv
 from subprocess import Popen, PIPE
