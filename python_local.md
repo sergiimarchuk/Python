@@ -9,4 +9,6 @@ tar -xvf Python-2.7.11.tar
 </pre>
 <pre>
 ./configure --prefix=/opt/python27
+make 
+make install
 </pre>
