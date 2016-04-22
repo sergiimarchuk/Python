@@ -12,3 +12,6 @@ tar -xvf Python-2.7.11.tar
 make 
 make install
 </pre>
+<pre>
+https://pypi.python.org/packages/02/27/bd0baae0da48a5fed93f09ac7a141c241b9f60cb4f1c385939cc43f891ab/dmidecode-0.8.1.tar.gz
+</pre>
