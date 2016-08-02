@@ -1,7 +1,9 @@
 <pre>
- install python-pip python-dev build-essential
+ yum install python-pip python-dev build-essential
 
- install virtualenv virtualenvwrapper
+ pip install virtualenv virtualenvwrapper
 
- install --upgrade pip
+ pip install --upgrade pip
+ 
+ pip install requests
 </pre>
