@@ -1,4 +1,3 @@
-<pre>
 #!/usr/bin/python
 import sys
 from subprocess import Popen, PIPE
@@ -13,6 +12,7 @@ def CreateUser(commandSSH,commandARG1,SectionComments,CommandComments):
 CreateUser("/usr/sbin/useradd",sys.argv[1],sys.argv[2],sys.argv[3])
 
 
-
+'''
+Example.
 [@appsrv spython]# ./createUserDef.py testuser1 shell homedir
-</pre>
+'''
