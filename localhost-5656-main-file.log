@@ -1,0 +1,12 @@
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION MEMORY:. Status Ok.
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:COLLECT INFO MEMORY:. 1877 Mb. Current Usage Memory is 30.1%
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION SWAP:. Status Ok.
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:COLLECT INFO SWAP:. Swap Total 815 Mb. Current uses SWAP: 0%
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION CPU:.  ::Core 0. Status OK.::  ::Core 1. Status OK.::
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:COLLECT INFO CPU:. Status OK. Core 0 Util CPU 0.0%, Status OK. Core 1 Util CPU 0.0%
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION DISKS:. Status Ok. Part. / 42.9%, Status Ok. Part. /boot 10.87%
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:COLLECT INFO DISK:.  Part. / Current uses memory: 42.9%,  Part. /boot Current uses memory: 10.87%
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:STAT NET_INFO:. ["NIC: lo: address='127.0.0.1', netmask='255.0.0.0'", "NIC: lo: address='::1', netmask='ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff'", "NIC: lo: address='00:00:00:00:00:00', 'netmask=None']", "NIC: docker0: address='172.17.42.1', netmask='255.255.0.0'", "NIC: docker0: address='fe80::f42a:99ff:fe00:8873%docker0', netmask='ffff:ffff:ffff:ffff::'", "NIC: docker0: address='00:00:00:00:00:00', 'netmask=None']", "NIC: eth0: address='10.0.2.15', netmask='255.255.255.0'", "NIC: eth0: address='fe80::a00:27ff:fef5:a74a%eth0', netmask='ffff:ffff:ffff:ffff::'", "NIC: eth0: address='08:00:27:f5:a7:4a', 'netmask=None']"]
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION NETWORK:.  Status OK. NIC for input. NIC: lo, Status OK. NIC for output. NIC: lo, Status OK. NIC for input. NIC: docker0, Status OK. NIC for output. NIC: docker0, Status OK. NIC for input. NIC: eth0, Status OK. NIC for output. NIC: eth0
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:SECTION BOOT:. Server UP from: 2016-07-05 14:17:13
+2016-07-07 20:09:23.958782 FQDN Server: Mysql: .:STAT USERS LOGGED:. [suser(name='root', terminal='pts/0', host='10.0.2.2', started=1467717632.0), suser(name='root', terminal='pts/1', host='10.0.2.2', started=1467897472.0)]
