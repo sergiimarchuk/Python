@@ -1,4 +1,3 @@
-<pre>
 while m < n:
         o = m
         ip_ = '192.168.10.'+str(o)
@@ -50,4 +49,4 @@ for h in host:
 print
 
 
-</pre>
+
