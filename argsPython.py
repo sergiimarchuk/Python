@@ -1,5 +1,9 @@
 #!/usr/bin/python
 import sys
+'''
+Example.
+[@appsrv spython]# ./createUserDef.py testuser1 shell homedir
+'''
 from subprocess import Popen, PIPE
 dicarg =  {'shell':'-m -s /bin/bash','homedir':'-d /tmp/test'}
 
@@ -12,7 +16,4 @@ def CreateUser(commandSSH,commandARG1,SectionComments,CommandComments):
 CreateUser("/usr/sbin/useradd",sys.argv[1],sys.argv[2],sys.argv[3])
 
 
-'''
-Example.
-[@appsrv spython]# ./createUserDef.py testuser1 shell homedir
-'''
+
