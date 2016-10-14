@@ -19,4 +19,4 @@ def hello():
 print hello() ## returns "<b><i>hello world</i></b>"
 ```
 
-<pre> http://blog.djangofan.ru/2016/05/python_20.html </pre>
+<pre> http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python/739665#739665 </pre>
