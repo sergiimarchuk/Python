@@ -1,3 +1,4 @@
+```python
 lis = [0,3,4,3,5,4,4,1,5,1,1,0,7,7,8,7,4,5,6]
 print lis,'\n'
 
@@ -20,7 +21,9 @@ for i in lis:
 #print dic
 for key in dic:
         print 'element :', key, 'count repeat', dic[key]
-        
+
+```
+
  <pre>
   OUTPUT :
   </pre>
