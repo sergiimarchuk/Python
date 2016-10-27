@@ -3,7 +3,6 @@ lis = [0,3,4,3,5,4,4,1,5,1,1,0,7,7,8,7,4,5,6]
 print lis,'\n'
 
 l = len(lis)
-c = 0 
 
 dic = {}
 for i in lis:
@@ -13,7 +12,6 @@ for i in lis:
                 #print lis[c]
                 if j == i:
                         count = count + 1
-                        c = c + 1
       
         #print i,'got it','count = ',count
         #print i
