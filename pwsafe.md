@@ -63,7 +63,13 @@ def add_user():
 
 main = add_user()
 
+````
 
+````bash
+pwsafe -f /root/.pwsafe.dat --exportdb | grep -i newuser
+````
+
+````python
 
 #!/usr/bin/python
 
@@ -87,5 +93,5 @@ def add_user():
 main = add_user()
 
 
-
+````
 
