@@ -90,7 +90,7 @@ def  send_html_report(html):
 
             #me = hfqdn
             me = 'root@' + str(hostname) + '.local'
-            you = ['sergii.marchuk@evry.com']
+            you = ['sergii.marchuk@job_mail.com']
 
             msg = MIMEMultipart('alternative')
             msg['Subject'] = "Check kerberos ticket expires date. " + str(datetime.now())
@@ -101,7 +101,7 @@ def  send_html_report(html):
 
             msg.attach(part2)
 
-            s = smtplib.SMTP('smtp.cosng.net')
+            s = smtplib.SMTP('smtp.server.net')
             s.sendmail(me, you, msg.as_string())
             s.quit()
             print(html)
