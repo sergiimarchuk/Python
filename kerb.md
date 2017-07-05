@@ -12,7 +12,7 @@ hostname = os.environ['HOSTNAME']
 file_log_name = "/home/sergiimarchuk/checklog.log"
 cmd_klist = "/usr/bin/klist"
 cmd_kinit = "/usr/bin/kinit -kt /etc/krb5.keytab"
-cmd_df_
+#cmd_df_
 
 # let's get infor about status kerb tickets etc..
 def run_binary_command(system_command):
