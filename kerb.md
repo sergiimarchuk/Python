@@ -9,7 +9,7 @@ from subprocess import Popen, PIPE
 hostname = os.environ['HOSTNAME']
 
 # define path for file which has contains logs
-file_log_name = "/home/e220314/checklog.log"
+file_log_name = "/home/sergiimarchuk/checklog.log"
 cmd_klist = "/usr/bin/klist"
 cmd_kinit = "/usr/bin/kinit -kt /etc/krb5.keytab"
 cmd_df_
