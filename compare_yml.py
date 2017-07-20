@@ -56,10 +56,10 @@ def compare_structure(path):
                         list_finish.append(d)
         #print "lllllllllllllllll", list_finish
         return list_finish
-c1 = compare_structure("/home/user/link-nfs/Yakiv/ansible_1/host_vars/ago/test/wora_asm.yml")
+c1 = compare_structure("/home/user/link-nfs/ansible_1/host_vars/ago/test/wora_asm.yml")
 print c1
 
-c2 = compare_structure("/home/user/link-nfs/Yakiv/ansible_1/host_vars/22/ora_asm.yml")
+c2 = compare_structure("/home/user/link-nfs/ansible_1/host_vars/22/ora_asm.yml")
 print c2
 '''
 #for i in (c1):
