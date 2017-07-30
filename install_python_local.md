@@ -1,5 +1,6 @@
 <pre>
 https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
 </pre>
 <pre>
 gzip -d Python-2.7.11.tgz
