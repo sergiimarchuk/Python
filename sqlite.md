@@ -1,6 +1,6 @@
 ##### Insert records into sqlite.db
 
-</pre>
+`````puython
 #!/opt/python27/bin/python
 from collections import Counter
 import glob
@@ -32,4 +32,4 @@ def pars_log():
             
             #concur.execute("INSERT INTO tab_srv(namesrv) VALUES ('" + zzz + "')")
             conn.commit()       
-</pre>
+
