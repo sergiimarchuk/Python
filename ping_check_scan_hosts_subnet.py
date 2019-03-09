@@ -17,7 +17,7 @@ for i in range(1,255,1):
 import subprocess
 print "test"
 i=0
-while i in range(1,255,1):
+while i in range(0,255,1):
 	i = i + 1
 	print i	
 
